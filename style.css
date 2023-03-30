@@ -17,3 +17,50 @@
     --gray700: rgb(86,95,92);
     --gray900: rgb(32,38,36);
   }
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+/* navigation */
+  .nav {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+  }
+  nav li {
+    list-style-type: none;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 30px;
+  }
+  nav a {
+    color: var(--gray900);
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+  }
+/* name title */
+  .hero {
+    position: relative;
+    background: url(img/hero-img.jpg);
+    height: 75vh;
+    background-size: cover;
+  }
+  .hero-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+.hero-img {
+  background-image: cover;
+}
