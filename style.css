@@ -17,7 +17,32 @@
     --gray700: rgb(86,95,92);
     --gray900: rgb(32,38,36);
   }
+/* fonts settings */
+h1 {
+  font-size: 64px;
+  font-weight: 200;
+  color: var(--secondary);
+}
+h2 {
+  font-size: 52.5px;
+  font-weight: 900;
+  line-height: 80px;
+  color: var(--secondary);
+}
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 50px;
+  color: var(--secondary);
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+  /* color/line height changes  */
+}
 
+/* document settings */
 body {
   font-family: 'Archivo', sans-serif;
 }
@@ -63,4 +88,38 @@ body {
   }
 .hero-img {
   background-image: cover;
+}
+/* nav boxes */
+.hero-boxes {
+  position: relative;
+}
+.box1 {
+  background-color: var(--primary50);
+  width: 332px;
+  height: 240px;
+  position: absolute;
+  left: 440px;
+  top: 158px;
+}
+.box2 {
+  background-color: var(--accent50);
+  width: 204px;
+  height: 220px;
+  position: absolute;
+  left: 740px;
+  top: 390px;
+}
+.box3 {
+  background-color: var(--accent250);
+  width: 633px;
+  height: 290px;
+  position: absolute;
+  right: 30px;
+  top: 600px;
+}
+.hero-subtitle {
+  text-align: right;
+  /* top right bottom left  */
+  padding: 5em 1.5em 1.5em 0;
+
 }
