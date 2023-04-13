@@ -17,6 +17,7 @@
 	--gray700: rgb(86, 95, 92);
 	--gray900: rgb(32, 38, 36);
 }
+
 /* fonts settings */
 h1 {
 	font-size: 64px;
@@ -128,9 +129,10 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
+
 .section1 {
 	background-color: var(--accent250);
-	width: 576px;
+	width: 1152px;
 	height: 386px;
 	display: flex;
 	justify-content: center;
@@ -138,24 +140,49 @@ h1 {
 }
 .section2 {
 	background-color: var(--primary50);
+	width: 1152px;
+	height: 346px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .section3 {
 	background-color: var(--secondary50);
+	width: 1152px;
+	height: 506px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .section4 {
 	background-color: var(--accent50);
+	width: 1152px;
+	height: 386px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.content {
-	width: 576px;
-	height: 386px;
+.info1 {
 	justify-content: left;
+	line-height: 2em;
+	gap: 0em;
+	padding: 2em;
+}
+.info2 {
+	justify-content: left;
+	line-height: 2em;
+	gap: 0em;
+	padding: 2em;
+}
+.info3 {
+	justify-content: left;
+	line-height: 2em;
+	gap: 0em;
+	padding: 2em;
+}
+.info4 {
+	justify-content: left;
+	line-height: 2em;
+	gap: 0em;
+	padding: 2em;
 }
