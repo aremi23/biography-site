@@ -81,11 +81,17 @@ nav ul {
 	background: url(img/hero-img.jpg);
 	height: 75vh;
 	background-size: cover;
+	background-position: center;
 }
 .hero-title {
 	position: absolute;
 	left: 0;
 	top: 0;
+	bottom: 0;
+}
+
+.hero-title img {
+	height: 100%;
 }
 .hero-img {
 	background-image: cover;
@@ -116,7 +122,7 @@ nav ul {
 	height: 290px;
 	position: absolute;
 	right: 30px;
-	top: 600px;
+	bottom: 50px;
 }
 .hero-subtitle {
 	text-align: right;
@@ -130,37 +136,46 @@ h1 {
 	align-items: center;
 }
 
-.section1 {
-	background-color: var(--accent250);
+img {
+	display: block;
+}
+
+.road-to-fame {
 	width: 1152px;
-	height: 386px;
+	margin: 0 auto;
+}
+
+.road-to-fame > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.section1 {
+	background-color: var(--accent250);
+	height: 386px;
+	
 }
 .section2 {
 	background-color: var(--primary50);
-	width: 1152px;
 	height: 346px;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 .section3 {
 	background-color: var(--secondary50);
-	width: 1152px;
 	height: 506px;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 .section4 {
 	background-color: var(--accent50);
-	width: 1152px;
 	height: 386px;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 .info1 {
 	justify-content: left;
