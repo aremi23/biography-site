@@ -43,6 +43,29 @@ p {
 	/* color/line height changes  */
 }
 
+/* button settings */
+button {
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--accent2);
+	background-color: var(--secondary);
+	border: 3px solid var(--accent2);
+	border-radius: 5px;
+	/* border-color: var(--accent2);
+	border-width: 3px;
+	 */
+	/* top right bottom left  */
+	padding: 5px 12px;
+	transition: background-color 0.5s;
+}
+
+button:hover {
+	background-color: var(--accent2);
+	color: var(--secondary);
+	border-color: var(--secondary);
+}
+
 /* document settings */
 body {
 	font-family: "Archivo", sans-serif;
@@ -158,23 +181,14 @@ img {
 .section2 {
 	background-color: var(--primary50);
 	height: 346px;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 .section3 {
 	background-color: var(--secondary50);
 	height: 506px;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 .section4 {
 	background-color: var(--accent50);
 	height: 386px;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 .info1 {
 	justify-content: left;
@@ -200,3 +214,66 @@ img {
 	gap: 0em;
 	padding: 2em;
 }
+
+/* music section */
+.pic-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6em;
+	position: relative;
+	margin: 5em 0;
+}
+.music-pic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.music-pic::before {
+	content: "";
+	display: block;
+	z-index: -1;
+	width: 250px;
+	height: 250px;
+	background: var(--primary50);
+	position: absolute;
+	top: -25px;
+	left: -25px;
+}
+
+/* .music-pic::after {
+	content: "";
+	display: block;
+	z-index: -1;
+	width: 250px;
+	height: 250px;
+	background: var(--accent250);
+	position: absolute;
+	bottom: -25px;
+	right: -25px;
+} */
+
+.music-info {
+	position: relative;
+	width: 25%;
+	gap: 17px;
+}
+
+.music-info h3 {
+	line-height: 35px;
+}
+
+.music-info p {
+	line-height: 30px;
+}
+
+/* .gold-box {
+	width: 250px;
+	height: 250px;
+	background: gold;
+	position: absolute;
+	top: -15px;
+	right: 150px;
+} */
