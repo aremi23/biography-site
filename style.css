@@ -277,3 +277,27 @@ img {
 	top: -15px;
 	right: 150px;
 } */
+
+/* chopin-section */
+.chopin-section div {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+/* .photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	position: absolute;
+}
+
+.last-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	position: absolute;
+} */
