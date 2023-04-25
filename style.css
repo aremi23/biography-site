@@ -69,6 +69,7 @@ button:hover {
 /* document settings */
 body {
 	font-family: "Archivo", sans-serif;
+	background-color: var(--gray100);
 }
 .container {
 	width: 1440px;
@@ -279,25 +280,53 @@ img {
 } */
 
 /* chopin-section */
-.chopin-section div {
+.info-part {
+	display: flex;
+	justify-content: center;
+	margin: 6em;
+	gap: 4em;
+}
+
+.last-info p {
+	line-height: 40px;
+	color: var(--gray700);
+	padding-top: 2.5em;
+}
+
+/* footer */
+.footer {
+	background-color: var(--secondary);
+	height: 336px;
+	/* top right bottom left  */
+	padding: 4em 6em;
+	display: flex;
+}
+
+.site-map p {
+	line-height: 70px;
+	color: var(--gray100);
+}
+
+.contact-info {
 	display: inline-block;
-	justify-content: center;
 	align-items: center;
-	position: absolute;
+	margin: 0 20em;
 }
 
-/* .photo {
+.contact-info p {
+	font-size: 24px;
+	font-weight: 500;
+	font-style: italic;
+	color: var(--gray100);
+}
+.icons {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	position: absolute;
 }
 
-.last-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	position: absolute;
-} */
+/* form within footer */
+form p {
+	font-size: 24px;
+	font-weight: 500;
+	font-style: italic;
+	color: var(--gray100);
+}
