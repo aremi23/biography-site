@@ -308,7 +308,8 @@ img {
 }
 
 .contact-info {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	margin: 0 20em;
 }
@@ -321,6 +322,7 @@ img {
 }
 .icons {
 	display: flex;
+	gap: 4em;
 }
 
 /* form within footer */
