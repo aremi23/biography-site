@@ -76,12 +76,17 @@ body {
 	margin: 0 auto;
 }
 /* navigation */
-.nav {
+.navigation {
 	height: 100px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 80px;
+	padding: 0 3em;
+	/* top right bottom left  */
+}
+
+nav {
+	padding-left: 5em;
 }
 nav li {
 	list-style-type: none;
@@ -102,7 +107,7 @@ nav ul {
 /* name title */
 .hero {
 	position: relative;
-	background: url(img/hero-img.jpg);
+	background: url(img/better-hero-img.jpg);
 	height: 75vh;
 	background-size: cover;
 	background-position: center;
@@ -308,7 +313,7 @@ img {
 }
 
 .contact-info {
-	display: flex;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	margin: 0 20em;
