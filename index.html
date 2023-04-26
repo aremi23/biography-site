@@ -10,14 +10,14 @@
 	<body>
 		<div class="container">
 			<div class="hero">
-				<div class="navigation">
+				<div class="navigation" id="home">
 					<div class="spacer"></div>
 					<nav>
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Secret Road</a></li>
-							<li><a href="#">Famous Music</a></li>
-							<li><a href="#">Chopin Today</a></li>
+							<li><a href="#hero">Home</a></li>
+							<li><a href="#road-to-fame">Secret Road</a></li>
+							<li><a href="#music-section">Famous Music</a></li>
+							<li><a href="#chopin-section">Chopin Today</a></li>
 						</ul>
 					</nav>
 					<div class="logo">
@@ -31,20 +31,24 @@
 				<div class="box2"></div>
 				<div class="box3">
 					<div class="hero-subtitle">
-						<div class="prodigy">
-							<h2>The Child Prodigy</h2>
-						</div>
-						<div class="sub">
-							<p>
-								This weeks addition of All About Chopin featuring his<br />
-								secret road to fame.
-							</p>
-						</div>
+						<h2>The Child Prodigy</h2>
+						<p>
+							This weeks addition of All About Chopin featuring his<br />
+							secret road to fame.
+						</p>
 					</div>
 				</div>
 			</div>
+			<div class="back-btn">
+				<a href="#home"
+					><i
+						><iconify-icon
+							icon="mdi:arrow-up-circle-outline"
+							style="color: #202624"></iconify-icon></i
+				></a>
+			</div>
 
-			<div class="road-to-fame">
+			<div class="road-to-fame" id="road-to-fame">
 				<h1>Chopin's Secret Road to Fame</h1>
 				<div class="section1">
 					<div class="img1">
@@ -104,7 +108,7 @@
 				</div>
 			</div>
 
-			<div class="music-section">
+			<div class="music-section" id="music-section">
 				<h1>The songs the child prodigy created</h1>
 				<div class="pic-info">
 					<div class="music-pic">
@@ -157,7 +161,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="chopin-section">
+			<div class="chopin-section" id="chopin-section">
 				<h1>The Chopin we know today</h1>
 				<div class="info-part">
 					<div class="photo">
