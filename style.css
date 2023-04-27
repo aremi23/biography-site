@@ -62,8 +62,6 @@ html {
 }
 .back-btn a {
 	font-size: 24px;
-	/* background: url("https://api.iconify.design/mdi/arrow-up-circle-outline.svg")
-		no-repeat center center / contain; */
 }
 .back-btn {
 	position: fixed;
@@ -71,7 +69,9 @@ html {
 	color: var(--secondary);
 	right: 15px;
 	bottom: 15px;
+	display: none;
 }
+
 button:hover {
 	background-color: var(--accent2);
 	color: var(--secondary);
@@ -198,6 +198,19 @@ img {
 .section1 {
 	background-color: var(--accent250);
 	height: 386px;
+	position: relative;
+	left: -4em;
+}
+.section1::before {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 500px;
+	height: 250px;
+	background: var(--primary50);
+	position: absolute;
+	top: 1200px;
+	right: 100px;
 }
 .section2 {
 	background-color: var(--primary50);
