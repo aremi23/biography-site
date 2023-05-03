@@ -21,8 +21,11 @@
 /* fonts settings */
 h1 {
 	font-size: 64px;
-	font-weight: 200;
+	font-style: regular;
+	/* font-weight: 200; */
+	font-weight: 400;
 	color: var(--secondary);
+	font-family: "Bodoni Moda", serif;
 }
 h2 {
 	font-size: 52.5px;
@@ -62,14 +65,16 @@ html {
 }
 .back-btn a {
 	font-size: 24px;
+	color: var(--secondary);
 }
 .back-btn {
 	position: fixed;
-	z-index: 1000px;
-	color: var(--secondary);
 	right: 15px;
 	bottom: 15px;
 	display: none;
+}
+.back-btn a:hover {
+	color: var(--primary);
 }
 
 button:hover {
@@ -119,7 +124,7 @@ nav ul {
 /* name title */
 .hero {
 	position: relative;
-	background: url(img/better-hero-img.jpg);
+	background: url(img/better-hero-crop.png);
 	height: 75vh;
 	background-size: cover;
 	background-position: center;
@@ -193,36 +198,98 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 5em;
 }
 
 .section1 {
 	background-color: var(--accent250);
 	height: 386px;
 	position: relative;
-	left: -4em;
+	left: -7em;
 }
 .section1::before {
 	content: "";
 	display: block;
 	z-index: -1000px;
-	width: 500px;
-	height: 250px;
+	width: 189px;
+	height: 224px;
 	background: var(--primary50);
 	position: absolute;
-	top: 1200px;
-	right: 100px;
+	top: 0px;
+	right: -300px;
 }
 .section2 {
 	background-color: var(--primary50);
 	height: 346px;
+	position: relative;
+	right: -7em;
+}
+.section2::before {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 189px;
+	height: 346px;
+	background: var(--secondary50);
+	position: absolute;
+	top: 0px;
+	left: -270px;
 }
 .section3 {
 	background-color: var(--secondary50);
 	height: 506px;
+	position: relative;
+	left: -7em;
+}
+.section3::before {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 219px;
+	height: 264px;
+	background: var(--accent250);
+	position: absolute;
+	top: 0px;
+	right: -270px;
+}
+.section3::after {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 80px;
+	height: 506px;
+	background: var(--accent50);
+	position: absolute;
+	top: 0px;
+	right: -270px;
 }
 .section4 {
 	background-color: var(--accent50);
 	height: 386px;
+	position: relative;
+	right: -7em;
+}
+.section4::before {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 138px;
+	height: 224px;
+	background: var(--secondary50);
+	position: absolute;
+	top: 0px;
+	left: -270px;
+}
+.section4::after {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 159px;
+	height: 386px;
+	background: var(--primary50);
+	position: absolute;
+	top: 0px;
+	left: -180px;
 }
 .info1 {
 	justify-content: left;
@@ -325,6 +392,17 @@ img {
 	color: var(--gray700);
 	padding-top: 2.5em;
 }
+.photo > img::after {
+	content: "";
+	display: block;
+	z-index: -1000px;
+	width: 240px;
+	height: 240px;
+	background: var(--secondary50);
+	position: absolute;
+	bottom: 100px;
+	right: 270px;
+}
 
 /* footer */
 .footer {
@@ -332,7 +410,9 @@ img {
 	height: 336px;
 	/* top right bottom left  */
 	padding: 4em 6em;
+	align-type: center;
 	display: flex;
+	margin: 0 auto;
 }
 
 .site-map p {
@@ -344,7 +424,11 @@ img {
 	display: inline-block;
 	justify-content: center;
 	align-items: center;
-	margin: 0 20em;
+	/* margin: 0 20em; */
+}
+
+.connect p {
+	align-items: center;
 }
 
 .contact-info p {
@@ -355,6 +439,7 @@ img {
 }
 .icons {
 	display: flex;
+	justify-content: center;
 	gap: 4em;
 }
 
@@ -364,4 +449,7 @@ form p {
 	font-weight: 500;
 	font-style: italic;
 	color: var(--gray100);
+}
+form {
+	justify-content: right;
 }
