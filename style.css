@@ -22,7 +22,6 @@
 h1 {
 	font-size: 64px;
 	font-style: regular;
-	/* font-weight: 200; */
 	font-weight: 400;
 	color: var(--secondary);
 	font-family: "Bodoni Moda", serif;
@@ -73,13 +72,13 @@ html {
 	scroll-behavior: smooth;
 }
 .back-btn a {
-	font-size: 24px;
+	font-size: 30px;
 	color: var(--primary);
 }
 .back-btn {
 	position: fixed;
-	right: 15px;
-	bottom: 15px;
+	right: 20px;
+	bottom: 20px;
 	display: none;
 	z-index: 1000;
 }
@@ -104,7 +103,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 3em;
-	/* top right bottom left  */
 }
 nav {
 	padding-left: 5em;
@@ -127,6 +125,14 @@ nav ul {
 	display: flex;
 }
 
+/* navigation hover state */
+nav a:hover {
+	border-bottom: 10px solid var(--primary50);
+}
+.site-map a:hover {
+	color: var(--primary);
+}
+
 /* name title */
 .hero {
 	position: relative;
@@ -147,7 +153,8 @@ nav ul {
 .hero-img {
 	background-image: cover;
 }
-/* nav boxes */
+
+/* hero boxes/subtitle */
 .box1 {
 	background-color: var(--primary50);
 	width: 332px;
@@ -174,35 +181,26 @@ nav ul {
 }
 .hero-subtitle {
 	text-align: right;
-	/* top right bottom left  */
 	padding: 5.5em 2em 1.5em 0;
 }
 .hero-subtitle p {
 	line-height: 1.5em;
 }
-/* road to fame section */
-h1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
+/* road to fame section */
 img {
 	display: block;
 }
-
 .road-to-fame {
 	width: 1152px;
 	margin: 0 auto;
 }
-
 .road-to-fame > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 5em;
 }
-
 .section1 {
 	background-color: var(--accent250);
 	height: 386px;
@@ -293,25 +291,7 @@ img {
 	top: 0px;
 	left: -180px;
 }
-.info1 {
-	justify-content: left;
-	line-height: 2em;
-	gap: 0em;
-	padding: 2em;
-}
-.info2 {
-	justify-content: left;
-	line-height: 2em;
-	gap: 0em;
-	padding: 2em;
-}
-.info3 {
-	justify-content: left;
-	line-height: 2em;
-	gap: 0em;
-	padding: 2em;
-}
-.info4 {
+.info {
 	justify-content: left;
 	line-height: 2em;
 	gap: 0em;
@@ -323,7 +303,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 6em;
+	gap: 8em;
 	position: relative;
 	margin: 5em 0;
 }
@@ -333,7 +313,6 @@ img {
 	align-items: center;
 	position: relative;
 }
-
 .music-pic::before {
 	content: "";
 	display: block;
@@ -345,41 +324,17 @@ img {
 	top: -25px;
 	left: -25px;
 }
-
-/* .music-pic::after {
-	content: "";
-	display: block;
-	z-index: -1;
-	width: 250px;
-	height: 250px;
-	background: var(--accent250);
-	position: absolute;
-	bottom: -25px;
-	right: -25px;
-} */
-
 .music-info {
 	position: relative;
 	width: 25%;
 	gap: 17px;
 }
-
 .music-info h3 {
 	line-height: 35px;
 }
-
 .music-info p {
 	line-height: 30px;
 }
-
-/* .gold-box {
-	width: 250px;
-	height: 250px;
-	background: gold;
-	position: absolute;
-	top: -15px;
-	right: 150px;
-} */
 
 /* chopin-section */
 .info-part {
@@ -388,7 +343,6 @@ img {
 	margin: 6em;
 	gap: 4em;
 }
-
 .last-info p {
 	line-height: 40px;
 	color: var(--gray700);
@@ -413,35 +367,28 @@ img {
 footer {
 	background-color: var(--secondary);
 	height: 336px;
-	/* top right bottom left  */
-	padding: 4em 6em;
+	padding: 2em 6em 2em 3em;
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 footer a {
 	text-decoration: none;
 	color: var(--gray100);
 }
-
 .site-map p {
 	line-height: 70px;
 	color: var(--gray100);
 }
-
 .contact-info {
 	display: inline-block;
 	justify-content: center;
 	align-items: center;
-	/* margin: 0 20em; */
 }
-
 .connect p {
 	align-items: center;
 }
-
 .contact-info p {
 	font-size: 24px;
 	font-weight: 500;
